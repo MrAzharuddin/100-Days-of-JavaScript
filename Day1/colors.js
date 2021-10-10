@@ -4326,14 +4326,10 @@ colors = {
   },
 };
 
-const btn = document.getElementById("btn");
-const colorNames = Object.keys(colors);
-btn.addEventListener("click", function () {
-  const data = colorNames[Math.floor(Math.random() * colorNames.length)];
-  var hex = colors[data].hex;
-  var rgb = colors[data].rgb;
-  document.getElementById("c-picker").style.backgroundColor = hex;
-  document.getElementById("name").innerHTML = colors[data].name;
-  document.getElementById("hex").innerHTML = hex;
-  document.getElementById("rgb").innerHTML = rgb;
-});
+var rColor = () => {
+  var colorNames = Object.keys(colors);
+  data = colorNames[Math.floor(Math.random() * colorNames.length - 1)];
+  return data
+};
+
+
