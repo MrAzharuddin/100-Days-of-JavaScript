@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main-page {
+  background: #acb6e5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#86fde8), to(#acb6e5));
+  background: linear-gradient(to right, #86fde8, #acb6e5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-page #content {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#main-page #content #text {
+  font-size: 4rem;
+  padding: 40px 0 0;
+}
+
+#main-page #content #res #numb {
+  font-size: 6rem;
+  padding: 10px 0 20px 0;
+}
+
+#main-page #content #res #btns button {
+  width: 100px;
+  height: 40px;
+  margin: 0 30px;
+  border: none;
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6dd5ed), to(#2193b0));
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#main-page #content #res #btns button:hover {
+  border-bottom: 3px solid #fff;
+}
+/*# sourceMappingURL=style.css.map */
