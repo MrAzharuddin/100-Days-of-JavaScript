@@ -1,0 +1,117 @@
+$yellow: #ffb703;
+$orange: #fb8503;
+$dblue: #023047;
+$blue: #219ebc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-page {
+  background: #acb6e5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #86fde8,
+    #acb6e5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-transform: capitalize;
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: $dblue;
+  }
+  #content {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-height: 60vh;
+    max-width: 50vw;
+    background: rgba(0, 0, 0, 0.25);
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .image-container {
+        img {
+          width: 150px;
+          border-radius: 50%;
+          margin: 10px 0 0px;
+        }
+      }
+      .name,
+      .title,
+      .desc {
+        margin: 3px 0;
+      }
+      .name {
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 600;
+      }
+      .title {
+        font-size: 1.2rem;
+        color: $dblue;
+      }
+      .desc {
+        max-width: 75%;
+        height: 20vh;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.1rem;
+        color: black;
+      }
+      .all-btns {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 15px 0;
+          .next,
+          .prev {
+            padding: 0 100px;
+            font-size: 2rem;
+            color: $orange;
+            font-weight: 600;
+          }
+        }
+        .random {
+          border: none;
+          padding: 10px;
+          border-radius: 30px;
+          background: $yellow;
+          transition: all 0.3s ease-in-out;
+          font-size: 1rem;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+        }
+        .random:hover {
+          background: rgba(255, 255, 255, 0.9);
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
