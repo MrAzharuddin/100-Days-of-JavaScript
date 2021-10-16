@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main-page {
+  background: #acb6e5;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#86fde8), to(#acb6e5));
+  background: linear-gradient(to right, #86fde8, #acb6e5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-page #content {
+  width: 45vw;
+  min-height: 60vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#main-page #content .ques {
+  margin: 30px 20px;
+  font-size: 2.5rem;
+}
+
+#main-page #content ul {
+  list-style-type: none;
+  margin: 0 40px;
+}
+
+#main-page #content ul li {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+#main-page #content ul li input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  outline: none;
+}
+
+#main-page #content ul li label {
+  margin-top: -10px;
+}
+
+#main-page #content #submit {
+  padding: 15px 30px;
+  margin: 10px 60px;
+  border: none;
+  background: #22ffae;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.scorePlace {
+  width: 80%;
+  min-height: 20vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scorePlace h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.scorePlace .btn {
+  padding: 15px 30px;
+  margin: 10px 60px;
+  border: none;
+  background: #22ffae;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
