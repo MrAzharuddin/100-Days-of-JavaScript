@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #06beb6;
+  background: -webkit-gradient(linear, left top, right top, from(#48b1bf), to(#06beb6));
+  background: linear-gradient(to right, #48b1bf, #06beb6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .inner-box {
+  width: 90vw;
+  min-height: 90vh;
+}
+
+.main-page .inner-box .title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 1000;
+  color: white;
+}
+
+.main-page .inner-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.main-page .inner-box form .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .inner-box form .info .weight,
+.main-page .inner-box form .info .height {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#1c92d2), to(#f2fcfe));
+  background: linear-gradient(to right, #1c92d2, #f2fcfe);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-page .inner-box form .info .weight label,
+.main-page .inner-box form .info .height label {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 120px 0 20px;
+  text-transform: uppercase;
+}
+
+.main-page .inner-box form .info .weight input,
+.main-page .inner-box form .info .height input {
+  height: 50px;
+  outline: none;
+  border: none;
+  margin: 0 0 20px;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-box-shadow: -15px 18px 24px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: -15px 18px 24px 3px rgba(0, 0, 0, 0.6);
+}
+
+.main-page .inner-box form .info .weight select,
+.main-page .inner-box form .info .height select {
+  width: 40%;
+  border: none;
+  outline: none;
+  height: 30px;
+  background: transparent;
+  border-bottom: 3px solid #000;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.main-page .inner-box form #submit {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-page .inner-box .output {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #364f6b;
+  min-height: 10vh;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
