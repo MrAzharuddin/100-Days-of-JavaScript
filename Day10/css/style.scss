@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  .navbar {
+    display: flex;
+    height: 96vh;
+    position: relative;
+    left: -30vw;
+    transition: all 1000ms ease-in-out;
+    nav {
+      width: 30vw;
+      background: linear-gradient(to right, #f85032, #e73827);
+      height: 100vh;
+      flex: 0.3;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+        margin: 20px 0 20px;
+        color: white;
+      }
+      ul {
+        margin: 20px 0;
+        list-style: none;
+        li {
+          padding: 30px 0;
+          a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .close {
+        font-size: 1.8rem;
+        position: absolute;
+        left: 400px;
+        top: 20px;
+        cursor: pointer;
+        transition: opacity 1200ms ease-in-out;
+      }
+    }
+    .bars {
+      font-size: 1.8rem;
+      position: relative;
+      left: 20px;
+      top: 20px;
+      cursor: pointer;
+      transition: opacity 1200ms ease-in-out;
+      color: white;
+    }
+  }
+  section#home {
+    position: absolute;
+    height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: #000428; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #004e92,
+      #000428
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #004e92,
+      #000428
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      text-align: center;
+  h2{
+      text-align: center;
+      font-size: 5rem;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      color:white
+  }
+  }
+
+  
+}
