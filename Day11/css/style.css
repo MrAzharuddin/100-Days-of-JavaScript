@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Mukta:wght@200;300;400;500;600;700;800&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00b4db;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0083b0), to(#00b4db));
+  background: linear-gradient(to right, #0083b0, #00b4db);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main form {
+  width: 30vw;
+  min-height: 85vh;
+  background: rgba(0, 131, 176, 0.6);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main form h1 {
+  text-align: center;
+  margin: 20px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 2px;
+}
+
+.main form .ui-1,
+.main form .ui-2 {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1rem;
+  font-family: "Mukta", sans-serif;
+}
+
+.main form .ui-1 {
+  height: 25vh;
+}
+
+.main form .ui-1 .amount,
+.main form .ui-1 .tip,
+.main form .ui-1 .total-amt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main form .ui-1 .amount input {
+  width: 200px;
+  height: 30px;
+  background: transparent;
+  text-align: center;
+  border-bottom: 2px solid #0083b0;
+}
+
+.main form .ui-1 .amount label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main form .ui-1 .tip p,
+.main form .ui-1 .total-amt p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main form .ui-1 .tip span,
+.main form .ui-1 .total-amt span {
+  text-align: center;
+  font-weight: 400;
+}
+
+.main form .ui-1 .total-amt {
+  padding-top: 10px;
+  border-top: 2px solid;
+}
+
+.main form .ui-2 {
+  height: 30vh;
+}
+
+.main form .ui-2 .split-range,
+.main form .ui-2 .tip-range,
+.main form .ui-2 .split-amt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main form .ui-2 .tip-range input,
+.main form .ui-2 .split-range input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 200px;
+  height: 5px;
+  padding: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#da4453), to(#89216b));
+  background: linear-gradient(to right, #da4453, #89216b);
+  border-radius: 10px;
+}
+
+.main form .ui-2 .tip-range input::-webkit-slider-thumb,
+.main form .ui-2 .split-range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #00b4db;
+  border-radius: 50%;
+}
+
+.main form .ui-2 .tip-range label,
+.main form .ui-2 .split-range label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main form .ui-2 .split-amt {
+  border-top: 2px solid;
+  padding-top: 10px;
+}
+
+.main form .ui-2 .split-amt p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.main form .ui-2 .split-amt span {
+  text-align: center;
+  font-weight: 400;
+}
+
+.main #submit {
+  width: 130px;
+  height: 40px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Mukta", sans-serif;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

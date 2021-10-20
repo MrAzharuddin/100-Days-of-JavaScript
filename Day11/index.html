@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <form action="">
+        <h1>Tip Calculator</h1>
+        <div class="ui-1">
+          <div class="amount">
+            <label for="cost">Amount</label>
+            <input
+              type="number"
+              name="cost"
+              id="cost"
+              min="100"
+              placeholder="Minimum 100"
+              required
+            />
+          </div>
+          <div class="tip">
+            <p>Tip Amount</p>
+            <span class="tip-result">Rs.0.00</span>
+          </div>
+          <div class="total-amt">
+            <p class="final-total">Total</p>
+            <span class="finalamt-total">Rs.0.00</span>
+          </div>
+        </div>
+        <div class="ui-2">
+          <div class="tip-range">
+            <label for="tipvalue">Tip %</label>
+            <input
+              type="range"
+              name="tipvalue"
+              id="tipvalue"
+              min="0"
+              max="100"
+              value="15"
+            />
+            <span id="tipdata" class="percent">15%</span>
+          </div>
+          <div class="split-range">
+            <label for="splitvalue">Split</label>
+            <input
+              type="range"
+              name="splitvalue"
+              id="splitvalue"
+              min="1"
+              max="50"
+              value="1"
+            />
+            <span id="splitdata" class="percent">1</span>
+          </div>
+          <div class="split-amt">
+            <p class="split-total">Split Total</p>
+            <span class="splitamt-total"></span>
+          </div>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
