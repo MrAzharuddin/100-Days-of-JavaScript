@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .clock {
+  width: 28vw;
+  height: 28vw;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.main .clock #hr,
+.main .clock #min,
+.main .clock #sec {
+  position: absolute;
+  background: #000;
+  border-radius: 10px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.main .clock #hr {
+  width: 0.5%;
+  height: 12%;
+  top: 38%;
+  left: 49.5%;
+  opacity: 0.8;
+}
+
+.main .clock #min {
+  width: 0.3%;
+  height: 16%;
+  top: 34%;
+  left: 49.6%;
+  opacity: 0.8;
+  background: red;
+}
+
+.main .clock #sec {
+  width: 0.2%;
+  height: 18%;
+  top: 32%;
+  left: 49.65%;
+  opacity: 0.8;
+  background: green;
+}
+
+.main .clock #time12 {
+  position: absolute;
+  left: 48.8%;
+  top: 32%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main .clock #time3 {
+  position: absolute;
+  left: 62%;
+  top: 48.2%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main .clock #time6 {
+  position: absolute;
+  left: 49.4%;
+  top: 64%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main .clock #time9 {
+  position: absolute;
+  left: 37%;
+  top: 48%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
