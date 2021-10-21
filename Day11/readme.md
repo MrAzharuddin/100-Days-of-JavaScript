@@ -14,6 +14,5 @@ This App also helps the users to split their amounts for a max of 50 people.
 
 ---
 
-## ![Preview](./preview1.png)
-
+## ![Preview](./preview1.png)bs
 ![Preview](./preview2.png)
